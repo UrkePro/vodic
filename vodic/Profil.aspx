@@ -34,7 +34,7 @@
         </div>
         <main>
             <div class="container mt-5">
-                <asp:ChangePassword ID="ChangePassword1" runat="server" RenderOuterTable="false">
+                <asp:ChangePassword ID="ChangePassword1" runat="server" RenderOuterTable="false" InstructionText="Minimalna dužina lozinke: 7 znakova. Obavezno koristite bar 1 specijalni znak (!, @, #, itd.).">
                     <ChangePasswordTemplate>
                         <div class="row justify-content-center">
                             <div class="col-md-6">

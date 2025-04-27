@@ -64,5 +64,34 @@ namespace Vodic
             ddlRestoran.Items.Clear();
             ddlRestoran.Items.Add(new ListItem("-- Izaberi restoran --", ""));
         }
+
+        protected void ddlZnamenitost_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            znamenitostPreview.Visible = !string.IsNullOrEmpty(ddlZnamenitost.SelectedValue);
+            hotelPreview.Visible = false;
+            restoranPreview.Visible = false;
+            znamenitostPreview.DataBind();
+            hotelPreview.DataBind();
+            restoranPreview.DataBind();
+        }
+        protected void ddlHotel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            hotelPreview.Visible = !string.IsNullOrEmpty(ddlHotel.SelectedValue);
+            znamenitostPreview.Visible = false;
+            restoranPreview.Visible = false;
+            hotelPreview.DataBind();
+            znamenitostPreview.DataBind();
+            restoranPreview.DataBind();
+        }
+
+        protected void ddlRestoran_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            restoranPreview.Visible = !string.IsNullOrEmpty(ddlRestoran.SelectedValue);
+            znamenitostPreview.Visible = false;
+            hotelPreview.Visible = false;
+            hotelPreview.DataBind();
+            znamenitostPreview.DataBind();
+            restoranPreview.DataBind();
+        }
     }
 }

@@ -83,16 +83,14 @@
                             <SuccessTemplate>
                                 <div class="card shadow">
                                     <div class="card-header bg-success text-white">
-                                        <h4 class="card-title mb-0">Password Recovery Successful</h4>
+                                        <h4 class="card-title mb-0">Lozinka je uspešno izmenjena</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="alert alert-info">
                                             <p class="lead"><strong>
                                                 <asp:Literal ID="PasswordLiteral" runat="server" /></strong></p>
                                         </div>
-                                        <asp:Button ID="ContinueButton" runat="server"
-                                            CausesValidation="False" CommandName="Continue" Text="Continue"
-                                            CssClass="btn btn-primary" />
+                                        <a href="/" class="btn btn-primary">Nastavi</a>
                                     </div>
                                 </div>
                             </SuccessTemplate>
