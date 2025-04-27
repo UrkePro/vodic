@@ -11,7 +11,6 @@ namespace Vodic
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Login1_LoggedIn(object sender, EventArgs e)

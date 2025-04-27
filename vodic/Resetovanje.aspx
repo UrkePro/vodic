@@ -32,9 +32,9 @@
                                         <div class="mb-3">
                                             <label for="UserName" class="form-label">Korisničko ime ili email</label>
                                             <asp:TextBox ID="UserName" runat="server" CssClass="form-control"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="UserNameRequired" runat="server"
+                                            <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" Display="Dynamic"
                                                 ControlToValidate="UserName" ErrorMessage="Korisničko ime je obavezno."
-                                                ValidationGroup="PasswordRecovery1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                ValidationGroup="PasswordRecovery1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                         </div>
 
                                         <div class="mb-3 text-danger">
@@ -65,8 +65,8 @@
                                             <label for="Answer" class="form-label">Odgovor</label>
                                             <asp:TextBox ID="Answer" runat="server" CssClass="form-control"></asp:TextBox>
                                             <asp:RequiredFieldValidator ID="AnswerRequired" runat="server"
-                                                ControlToValidate="Answer" ErrorMessage="Odgovor je obavezan."
-                                                ValidationGroup="PasswordRecovery1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                ControlToValidate="Answer" ErrorMessage="Odgovor je obavezan." Display="Dynamic"
+                                                ValidationGroup="PasswordRecovery1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                         </div>
 
                                         <div class="d-flex justify-content-between">

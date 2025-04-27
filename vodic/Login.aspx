@@ -37,8 +37,8 @@
                                         <asp:TextBox ID="Password" runat="server" TextMode="Password" CssClass="form-control" autocomplete="current-password"></asp:TextBox>
                                     </div>
                                     <div class="mb-3 form-check">
-                                        <asp:CheckBox ID="RememberMe" runat="server" CssClass="form-check-input" />
-                                        <asp:Label ID="RememberMeLabel" runat="server" AssociatedControlID="RememberMe" CssClass="form-check-label">Zapamti me</asp:Label>
+                                        <input id="Login1_RememberMe" type="checkbox" name="Login1$RememberMe" class="form-check-input">
+                                        <label for="Login1_RememberMe" id="Login1_RememberMeLabel" class="form-check-label">Zapamti me</label>
                                     </div>
                                     <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Prijavi se" CssClass="btn btn-primary w-100" />
                                     <div class="text-danger mt-2">

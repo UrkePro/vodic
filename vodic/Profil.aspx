@@ -47,34 +47,34 @@
                                             <label for="CurrentPassword" class="form-label">Trenutna lozinka</label>
                                             <asp:TextBox ID="CurrentPassword" runat="server"
                                                 TextMode="Password" CssClass="form-control"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="CurrentPasswordRequired" runat="server"
+                                            <asp:RequiredFieldValidator ID="CurrentPasswordRequired" runat="server" Display="Dynamic"
                                                 ControlToValidate="CurrentPassword" ErrorMessage="Lozinka je obavezna."
-                                                ValidationGroup="ChangePassword1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                ValidationGroup="ChangePassword1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                         </div>
 
                                         <div class="mb-3">
                                             <label for="NewPassword" class="form-label">Nova lozinka</label>
                                             <asp:TextBox ID="NewPassword" runat="server"
                                                 TextMode="Password" CssClass="form-control"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="NewPasswordRequired" runat="server"
+                                            <asp:RequiredFieldValidator ID="NewPasswordRequired" runat="server" Display="Dynamic"
                                                 ControlToValidate="NewPassword" ErrorMessage="Nova lozinka je obavezna."
-                                                ValidationGroup="ChangePassword1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                ValidationGroup="ChangePassword1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                         </div>
 
                                         <div class="mb-3">
                                             <label for="ConfirmNewPassword" class="form-label">Potvrdi novu lozinku</label>
                                             <asp:TextBox ID="ConfirmNewPassword" runat="server"
                                                 TextMode="Password" CssClass="form-control"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="ConfirmNewPasswordRequired" runat="server"
+                                            <asp:RequiredFieldValidator ID="ConfirmNewPasswordRequired" runat="server" Display="Dynamic"
                                                 ControlToValidate="ConfirmNewPassword" ErrorMessage="Potvrda lozinke je obavezna."
-                                                ValidationGroup="ChangePassword1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                ValidationGroup="ChangePassword1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                         </div>
 
                                         <div class="mb-3">
                                             <asp:CompareValidator ID="NewPasswordCompare" runat="server"
                                                 ControlToCompare="NewPassword" ControlToValidate="ConfirmNewPassword"
                                                 Display="Dynamic" ErrorMessage="Lozinke se ne poklapaju."
-                                                ValidationGroup="ChangePassword1" CssClass="text-danger small d-block"></asp:CompareValidator>
+                                                ValidationGroup="ChangePassword1" CssClass="text-danger small"></asp:CompareValidator>
                                         </div>
 
                                         <div class="mb-3 text-danger">

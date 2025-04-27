@@ -36,25 +36,25 @@
                                                     <div class="mb-3">
                                                         <label for="UserName" class="form-label">Korisničko ime*</label>
                                                         <asp:TextBox ID="UserName" runat="server" CssClass="form-control"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="UserNameRequired" runat="server"
+                                                        <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" Display="Dynamic"
                                                             ControlToValidate="UserName" ErrorMessage="Korisničko ime je obavezno."
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                            ValidationGroup="CreateUserWizard1"  CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="Password" class="form-label">Lozinka*</label>
                                                         <asp:TextBox ID="Password" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="PasswordRequired" runat="server"
+                                                        <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" Display="Dynamic"
                                                             ControlToValidate="Password" ErrorMessage="Lozinka je obavezna."
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="ConfirmPassword" class="form-label">Potvrdi lozinku*</label>
                                                         <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server"
+                                                        <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" Display="Dynamic"
                                                             ControlToValidate="ConfirmPassword" ErrorMessage="Potvrda lozinke je obavezna."
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                                     </div>
                                                 </div>
 
@@ -62,29 +62,29 @@
                                                     <div class="mb-3">
                                                         <label for="Email" class="form-label">Email*</label>
                                                         <asp:TextBox ID="Email" runat="server" CssClass="form-control"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="EmailRequired" runat="server"
+                                                        <asp:RequiredFieldValidator ID="EmailRequired" runat="server" Display="Dynamic"
                                                             ControlToValidate="Email" ErrorMessage="Email je obavezan."
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                                         <asp:RegularExpressionValidator ID="EmailRegex" runat="server"
                                                             ControlToValidate="Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                                                             ErrorMessage="Unesite validnu email adresu." Display="Dynamic"
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block"></asp:RegularExpressionValidator>
+                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small"></asp:RegularExpressionValidator>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="Question" class="form-label">Sigurnosno pitanje*</label>
                                                         <asp:TextBox ID="Question" runat="server" CssClass="form-control"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="QuestionRequired" runat="server"
+                                                        <asp:RequiredFieldValidator ID="QuestionRequired" runat="server" Display="Dynamic"
                                                             ControlToValidate="Question" ErrorMessage="Sigurnosno pitanje je obavezno."
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="Answer" class="form-label">Odgovor*</label>
                                                         <asp:TextBox ID="Answer" runat="server" CssClass="form-control"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="AnswerRequired" runat="server"
+                                                        <asp:RequiredFieldValidator ID="AnswerRequired" runat="server" Display="Dynamic"
                                                             ControlToValidate="Answer" ErrorMessage="Odgovor je obavezan."
-                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small d-block mt-1"></asp:RequiredFieldValidator>
+                                                            ValidationGroup="CreateUserWizard1" CssClass="text-danger small mt-1"></asp:RequiredFieldValidator>
                                                     </div>
                                                 </div>
                                             </div>
@@ -113,9 +113,7 @@
                                         </div>
                                         <div class="card-body text-center">
                                             <p class="lead">Vaš nalog je uspešno kreiran.</p>
-                                            <asp:Button ID="ContinueButton" runat="server"
-                                                CausesValidation="False" CommandName="Continue" Text="Nastavi"
-                                                CssClass="btn btn-primary" />
+                                            <a href="/" class="btn btn-primary">Nastavi</a>
                                         </div>
                                     </div>
                                 </ContentTemplate>
