@@ -1,0 +1,18 @@
+﻿:root {
+    --bs-primary: #7B3F00;
+    --bs-primary-rgb: 123, 63, 0;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-color: white;
+    --bs-btn-hover-bg: #5a2e00;
+    --bs-btn-hover-border-color: #5a2e00;
+    --bs-btn-active-bg: #4a2600;
+    --bs-btn-active-border-color: #4a2600;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--bs-primary);
+}
