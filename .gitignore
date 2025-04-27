@@ -1,2 +1,5 @@
 .vs
+.vscode
 packages
+vodic/bin
+vodic/obj
